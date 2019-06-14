@@ -172,7 +172,6 @@
 		CD46E692BCEFE54B30ADBD0C102FB4DE /* Pods-Spin360Host.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spin360Host.release.xcconfig"; sourceTree = "<group>"; };
 		D092D68AA506FB3B1D646436E965E163 /* MagicalRecord+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Setup.m"; path = "MagicalRecord/Core/MagicalRecord+Setup.m"; sourceTree = "<group>"; };
 		D36556A30F408D5FD2F7DCD288E5F71F /* Pods-Spin360Host-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Spin360Host-acknowledgements.plist"; sourceTree = "<group>"; };
-		D8B3EAF139F9D2F14ABA6E5446160147 /* CSSpin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSSpin.framework; path = "CSSpin-1.0.5/CSSpin.framework"; sourceTree = "<group>"; };
 		DD57E52E15A834DC072FDD19112FCFAD /* MagicalRecord+Actions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Actions.m"; path = "MagicalRecord/Core/MagicalRecord+Actions.m"; sourceTree = "<group>"; };
 		DF5FAE197B57629C2C384B4208BBFF5C /* MagicalRecordLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordLogging.h; path = MagicalRecord/Core/MagicalRecordLogging.h; sourceTree = "<group>"; };
 		DFA0D7CF87EA013442E3D2AC41B50393 /* NSManagedObjectContext+MagicalObserving.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalObserving.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m"; sourceTree = "<group>"; };
@@ -181,6 +180,7 @@
 		EB220F365B826D07AF0F43E9677A3FE8 /* MagicalRecord-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord-prefix.pch"; sourceTree = "<group>"; };
 		F05A1AABB3DEFB373B10FE10F31DBAC6 /* MagicalRecord+ErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ErrorHandling.h"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.h"; sourceTree = "<group>"; };
 		F1E9BED503B872A3DB35DE00EA934D60 /* NSManagedObjectContext+MagicalChainSave.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalChainSave.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.m"; sourceTree = "<group>"; };
+		F4E87158780BCFB383F01740BCCDD232 /* CSSpin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSSpin.framework; path = "CSSpin-1.1.2/CSSpin.framework"; sourceTree = "<group>"; };
 		F7764CDF925699453BDC4E90CB80331A /* MagicalRecord+Actions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Actions.h"; path = "MagicalRecord/Core/MagicalRecord+Actions.h"; sourceTree = "<group>"; };
 		F9F2CA98DCA21F0980B05091F8EA553B /* NSRelationshipDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSRelationshipDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
 		FA2421F8E549F39FB37217DCEF35945D /* NSObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -207,14 +207,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14724DCD256577FA1EBFDA1C3B6C7B8D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D8B3EAF139F9D2F14ABA6E5446160147 /* CSSpin.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,7 +226,7 @@
 		1EB2267DCD15CD4E1D240A57FC1ED900 /* CSSpin */ = {
 			isa = PBXGroup;
 			children = (
-				14724DCD256577FA1EBFDA1C3B6C7B8D /* Frameworks */,
+				B031FB628D1FF7D71FD97852610D7478 /* Frameworks */,
 				7F2576BBD8E7C9352722BBA8E95925FF /* Support Files */,
 			);
 			name = CSSpin;
@@ -355,6 +347,14 @@
 				CC1121A752E8869BB0281BCBB2CA38F6 /* NSString+MagicalDataImport.m */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		B031FB628D1FF7D71FD97852610D7478 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4E87158780BCFB383F01740BCCDD232 /* CSSpin.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CCD1C900CA05A7896755E890BD424B5C /* Products */ = {

@@ -161,11 +161,11 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/CSSpin/CSSpin-1.0.5/CSSpin.framework"
+  install_framework "${PODS_ROOT}/CSSpin/CSSpin-1.1.2/CSSpin.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/CSSpin/CSSpin-1.0.5/CSSpin.framework"
+  install_framework "${PODS_ROOT}/CSSpin/CSSpin-1.1.2/CSSpin.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

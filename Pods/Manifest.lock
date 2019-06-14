@@ -1,5 +1,5 @@
 PODS:
-  - CSSpin (1.0.5)
+  - CSSpin (1.1.2)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
@@ -14,7 +14,7 @@ SPEC REPOS:
     - MagicalRecord
 
 SPEC CHECKSUMS:
-  CSSpin: 182eb24865ceb6b247d8af9f52f9dc5cdc0eb9c5
+  CSSpin: 01b28a2e73191fc8bf3ef7e500dda20c6e40d093
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
 
 PODFILE CHECKSUM: 4e555e6fca77cc1316362c3d8602d25f1048fe09
