@@ -1,0 +1,6 @@
+framework module Pods_Spin360Host {
+  umbrella header "Pods-Spin360Host-umbrella.h"
+
+  export *
+  module * { export * }
+}

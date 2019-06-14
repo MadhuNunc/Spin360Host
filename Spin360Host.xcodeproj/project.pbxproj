@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28CCD7FC22B004A500D674E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD7FB22B004A500D674E6 /* AppDelegate.swift */; };
+		28CCD80122B004A500D674E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CCD7FF22B004A500D674E6 /* Main.storyboard */; };
+		28CCD80322B004A500D674E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CCD80222B004A500D674E6 /* Assets.xcassets */; };
+		28CCD80622B004A500D674E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CCD80422B004A500D674E6 /* LaunchScreen.storyboard */; };
+		28CCD81122B004A600D674E6 /* Spin360HostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD81022B004A600D674E6 /* Spin360HostTests.swift */; };
+		28CCD81C22B004A600D674E6 /* Spin360HostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD81B22B004A600D674E6 /* Spin360HostUITests.swift */; };
+		28CCD82B22B004EA00D674E6 /* Spin360.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD82922B004EA00D674E6 /* Spin360.xcdatamodeld */; };
+		28CCD8B822B397B500D674E6 /* Spin360TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B022B397B400D674E6 /* Spin360TableViewCell.swift */; };
+		28CCD8B922B397B500D674E6 /* LoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B122B397B400D674E6 /* LoggingViewController.swift */; };
+		28CCD8BA22B397B500D674E6 /* Spin360ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B222B397B400D674E6 /* Spin360ListViewController.swift */; };
+		28CCD8BB22B397B500D674E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B322B397B400D674E6 /* HomeViewController.swift */; };
+		28CCD8BC22B397B500D674E6 /* LoggingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B422B397B400D674E6 /* LoggingTableViewCell.swift */; };
+		28CCD8BD22B397B500D674E6 /* LoggingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B522B397B500D674E6 /* LoggingDetailsViewController.swift */; };
+		28CCD8BE22B397B500D674E6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B622B397B500D674E6 /* Constants.swift */; };
+		28CCD8BF22B397B500D674E6 /* ProcessAndUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B722B397B500D674E6 /* ProcessAndUploadViewController.swift */; };
+		F6C9E33FABF3FE80A9F729D5 /* Pods_Spin360Host.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212EDB40BC7BEB77EA43DEE /* Pods_Spin360Host.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28CCD80D22B004A600D674E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28CCD7F022B004A500D674E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28CCD7F722B004A500D674E6;
+			remoteInfo = Spin360Host;
+		};
+		28CCD81822B004A600D674E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28CCD7F022B004A500D674E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28CCD7F722B004A500D674E6;
+			remoteInfo = Spin360Host;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0212EDB40BC7BEB77EA43DEE /* Pods_Spin360Host.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spin360Host.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28CCD7F822B004A500D674E6 /* Spin360Host.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spin360Host.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28CCD7FB22B004A500D674E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28CCD80022B004A500D674E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28CCD80222B004A500D674E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28CCD80522B004A500D674E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28CCD80722B004A500D674E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28CCD80C22B004A600D674E6 /* Spin360HostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Spin360HostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28CCD81022B004A600D674E6 /* Spin360HostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spin360HostTests.swift; sourceTree = "<group>"; };
+		28CCD81222B004A600D674E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28CCD81722B004A600D674E6 /* Spin360HostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Spin360HostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28CCD81B22B004A600D674E6 /* Spin360HostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spin360HostUITests.swift; sourceTree = "<group>"; };
+		28CCD81D22B004A600D674E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28CCD82A22B004EA00D674E6 /* Spin360.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spin360.xcdatamodel; sourceTree = "<group>"; };
+		28CCD8B022B397B400D674E6 /* Spin360TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spin360TableViewCell.swift; sourceTree = "<group>"; };
+		28CCD8B122B397B400D674E6 /* LoggingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingViewController.swift; sourceTree = "<group>"; };
+		28CCD8B222B397B400D674E6 /* Spin360ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spin360ListViewController.swift; sourceTree = "<group>"; };
+		28CCD8B322B397B400D674E6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		28CCD8B422B397B400D674E6 /* LoggingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingTableViewCell.swift; sourceTree = "<group>"; };
+		28CCD8B522B397B500D674E6 /* LoggingDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingDetailsViewController.swift; sourceTree = "<group>"; };
+		28CCD8B622B397B500D674E6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		28CCD8B722B397B500D674E6 /* ProcessAndUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessAndUploadViewController.swift; sourceTree = "<group>"; };
+		C377C91665C0ADC429180C7C /* Pods-Spin360Host.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spin360Host.release.xcconfig"; path = "Target Support Files/Pods-Spin360Host/Pods-Spin360Host.release.xcconfig"; sourceTree = "<group>"; };
+		C383FA946EE1C2D4546D4D10 /* Pods-Spin360Host.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spin360Host.debug.xcconfig"; path = "Target Support Files/Pods-Spin360Host/Pods-Spin360Host.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28CCD7F522B004A500D674E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C9E33FABF3FE80A9F729D5 /* Pods_Spin360Host.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28CCD80922B004A600D674E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28CCD81422B004A600D674E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28CCD7EF22B004A500D674E6 = {
+			isa = PBXGroup;
+			children = (
+				28CCD7FA22B004A500D674E6 /* Spin360Host */,
+				28CCD80F22B004A600D674E6 /* Spin360HostTests */,
+				28CCD81A22B004A600D674E6 /* Spin360HostUITests */,
+				28CCD7F922B004A500D674E6 /* Products */,
+				2DBEB3F8F673E304C144C228 /* Pods */,
+				A20326623C7ECF5CA771149D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28CCD7F922B004A500D674E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28CCD7F822B004A500D674E6 /* Spin360Host.app */,
+				28CCD80C22B004A600D674E6 /* Spin360HostTests.xctest */,
+				28CCD81722B004A600D674E6 /* Spin360HostUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28CCD7FA22B004A500D674E6 /* Spin360Host */ = {
+			isa = PBXGroup;
+			children = (
+				28CCD7FB22B004A500D674E6 /* AppDelegate.swift */,
+				28CCD8B322B397B400D674E6 /* HomeViewController.swift */,
+				28CCD8B222B397B400D674E6 /* Spin360ListViewController.swift */,
+				28CCD8B022B397B400D674E6 /* Spin360TableViewCell.swift */,
+				28CCD8B722B397B500D674E6 /* ProcessAndUploadViewController.swift */,
+				28CCD8B122B397B400D674E6 /* LoggingViewController.swift */,
+				28CCD8B522B397B500D674E6 /* LoggingDetailsViewController.swift */,
+				28CCD8B422B397B400D674E6 /* LoggingTableViewCell.swift */,
+				28CCD8B622B397B500D674E6 /* Constants.swift */,
+				28CCD7FF22B004A500D674E6 /* Main.storyboard */,
+				28CCD80222B004A500D674E6 /* Assets.xcassets */,
+				28CCD80422B004A500D674E6 /* LaunchScreen.storyboard */,
+				28CCD80722B004A500D674E6 /* Info.plist */,
+				28CCD82922B004EA00D674E6 /* Spin360.xcdatamodeld */,
+			);
+			path = Spin360Host;
+			sourceTree = "<group>";
+		};
+		28CCD80F22B004A600D674E6 /* Spin360HostTests */ = {
+			isa = PBXGroup;
+			children = (
+				28CCD81022B004A600D674E6 /* Spin360HostTests.swift */,
+				28CCD81222B004A600D674E6 /* Info.plist */,
+			);
+			path = Spin360HostTests;
+			sourceTree = "<group>";
+		};
+		28CCD81A22B004A600D674E6 /* Spin360HostUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28CCD81B22B004A600D674E6 /* Spin360HostUITests.swift */,
+				28CCD81D22B004A600D674E6 /* Info.plist */,
+			);
+			path = Spin360HostUITests;
+			sourceTree = "<group>";
+		};
+		2DBEB3F8F673E304C144C228 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C383FA946EE1C2D4546D4D10 /* Pods-Spin360Host.debug.xcconfig */,
+				C377C91665C0ADC429180C7C /* Pods-Spin360Host.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A20326623C7ECF5CA771149D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0212EDB40BC7BEB77EA43DEE /* Pods_Spin360Host.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28CCD7F722B004A500D674E6 /* Spin360Host */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28CCD82022B004A600D674E6 /* Build configuration list for PBXNativeTarget "Spin360Host" */;
+			buildPhases = (
+				569099A5D148C076141053ED /* [CP] Check Pods Manifest.lock */,
+				28CCD7F422B004A500D674E6 /* Sources */,
+				28CCD7F522B004A500D674E6 /* Frameworks */,
+				28CCD7F622B004A500D674E6 /* Resources */,
+				3B04AD4BADA1AAED2369C775 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spin360Host;
+			productName = Spin360Host;
+			productReference = 28CCD7F822B004A500D674E6 /* Spin360Host.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28CCD80B22B004A600D674E6 /* Spin360HostTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28CCD82322B004A600D674E6 /* Build configuration list for PBXNativeTarget "Spin360HostTests" */;
+			buildPhases = (
+				28CCD80822B004A600D674E6 /* Sources */,
+				28CCD80922B004A600D674E6 /* Frameworks */,
+				28CCD80A22B004A600D674E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28CCD80E22B004A600D674E6 /* PBXTargetDependency */,
+			);
+			name = Spin360HostTests;
+			productName = Spin360HostTests;
+			productReference = 28CCD80C22B004A600D674E6 /* Spin360HostTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28CCD81622B004A600D674E6 /* Spin360HostUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28CCD82622B004A600D674E6 /* Build configuration list for PBXNativeTarget "Spin360HostUITests" */;
+			buildPhases = (
+				28CCD81322B004A600D674E6 /* Sources */,
+				28CCD81422B004A600D674E6 /* Frameworks */,
+				28CCD81522B004A600D674E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28CCD81922B004A600D674E6 /* PBXTargetDependency */,
+			);
+			name = Spin360HostUITests;
+			productName = Spin360HostUITests;
+			productReference = 28CCD81722B004A600D674E6 /* Spin360HostUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28CCD7F022B004A500D674E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					28CCD7F722B004A500D674E6 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					28CCD80B22B004A600D674E6 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 28CCD7F722B004A500D674E6;
+					};
+					28CCD81622B004A600D674E6 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 28CCD7F722B004A500D674E6;
+					};
+				};
+			};
+			buildConfigurationList = 28CCD7F322B004A500D674E6 /* Build configuration list for PBXProject "Spin360Host" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28CCD7EF22B004A500D674E6;
+			productRefGroup = 28CCD7F922B004A500D674E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28CCD7F722B004A500D674E6 /* Spin360Host */,
+				28CCD80B22B004A600D674E6 /* Spin360HostTests */,
+				28CCD81622B004A600D674E6 /* Spin360HostUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28CCD7F622B004A500D674E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CCD80622B004A500D674E6 /* LaunchScreen.storyboard in Resources */,
+				28CCD80322B004A500D674E6 /* Assets.xcassets in Resources */,
+				28CCD80122B004A500D674E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28CCD80A22B004A600D674E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28CCD81522B004A600D674E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B04AD4BADA1AAED2369C775 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spin360Host/Pods-Spin360Host-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spin360Host/Pods-Spin360Host-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spin360Host/Pods-Spin360Host-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		569099A5D148C076141053ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spin360Host-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28CCD7F422B004A500D674E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CCD8B922B397B500D674E6 /* LoggingViewController.swift in Sources */,
+				28CCD7FC22B004A500D674E6 /* AppDelegate.swift in Sources */,
+				28CCD8BC22B397B500D674E6 /* LoggingTableViewCell.swift in Sources */,
+				28CCD82B22B004EA00D674E6 /* Spin360.xcdatamodeld in Sources */,
+				28CCD8B822B397B500D674E6 /* Spin360TableViewCell.swift in Sources */,
+				28CCD8BF22B397B500D674E6 /* ProcessAndUploadViewController.swift in Sources */,
+				28CCD8BD22B397B500D674E6 /* LoggingDetailsViewController.swift in Sources */,
+				28CCD8BA22B397B500D674E6 /* Spin360ListViewController.swift in Sources */,
+				28CCD8BB22B397B500D674E6 /* HomeViewController.swift in Sources */,
+				28CCD8BE22B397B500D674E6 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28CCD80822B004A600D674E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CCD81122B004A600D674E6 /* Spin360HostTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28CCD81322B004A600D674E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CCD81C22B004A600D674E6 /* Spin360HostUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28CCD80E22B004A600D674E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28CCD7F722B004A500D674E6 /* Spin360Host */;
+			targetProxy = 28CCD80D22B004A600D674E6 /* PBXContainerItemProxy */;
+		};
+		28CCD81922B004A600D674E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28CCD7F722B004A500D674E6 /* Spin360Host */;
+			targetProxy = 28CCD81822B004A600D674E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28CCD7FF22B004A500D674E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28CCD80022B004A500D674E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28CCD80422B004A500D674E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28CCD80522B004A500D674E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28CCD81E22B004A600D674E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28CCD81F22B004A600D674E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28CCD82122B004A600D674E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C383FA946EE1C2D4546D4D10 /* Pods-Spin360Host.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B622VQJ24;
+				INFOPLIST_FILE = Spin360Host/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.360video.Spin360Host;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28CCD82222B004A600D674E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C377C91665C0ADC429180C7C /* Pods-Spin360Host.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B622VQJ24;
+				INFOPLIST_FILE = Spin360Host/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.360video.Spin360Host;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28CCD82422B004A600D674E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B622VQJ24;
+				INFOPLIST_FILE = Spin360HostTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.360video.Spin360HostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spin360Host.app/Spin360Host";
+			};
+			name = Debug;
+		};
+		28CCD82522B004A600D674E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B622VQJ24;
+				INFOPLIST_FILE = Spin360HostTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.360video.Spin360HostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spin360Host.app/Spin360Host";
+			};
+			name = Release;
+		};
+		28CCD82722B004A600D674E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B622VQJ24;
+				INFOPLIST_FILE = Spin360HostUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.360video.Spin360HostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spin360Host;
+			};
+			name = Debug;
+		};
+		28CCD82822B004A600D674E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B622VQJ24;
+				INFOPLIST_FILE = Spin360HostUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.360video.Spin360HostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spin360Host;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28CCD7F322B004A500D674E6 /* Build configuration list for PBXProject "Spin360Host" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CCD81E22B004A600D674E6 /* Debug */,
+				28CCD81F22B004A600D674E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28CCD82022B004A600D674E6 /* Build configuration list for PBXNativeTarget "Spin360Host" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CCD82122B004A600D674E6 /* Debug */,
+				28CCD82222B004A600D674E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28CCD82322B004A600D674E6 /* Build configuration list for PBXNativeTarget "Spin360HostTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CCD82422B004A600D674E6 /* Debug */,
+				28CCD82522B004A600D674E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28CCD82622B004A600D674E6 /* Build configuration list for PBXNativeTarget "Spin360HostUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CCD82722B004A600D674E6 /* Debug */,
+				28CCD82822B004A600D674E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28CCD82922B004EA00D674E6 /* Spin360.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28CCD82A22B004EA00D674E6 /* Spin360.xcdatamodel */,
+			);
+			currentVersion = 28CCD82A22B004EA00D674E6 /* Spin360.xcdatamodel */;
+			path = Spin360.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 28CCD7F022B004A500D674E6 /* Project object */;
+}

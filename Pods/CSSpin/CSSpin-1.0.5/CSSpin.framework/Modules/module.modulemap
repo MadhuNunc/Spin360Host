@@ -1,0 +1,6 @@
+framework module CSSpin {
+  umbrella header "CSSpin.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+PODS:
+  - CSSpin (1.0.5)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+
+DEPENDENCIES:
+  - CSSpin
+  - MagicalRecord
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CSSpin
+    - MagicalRecord
+
+SPEC CHECKSUMS:
+  CSSpin: 182eb24865ceb6b247d8af9f52f9dc5cdc0eb9c5
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+
+PODFILE CHECKSUM: 4e555e6fca77cc1316362c3d8602d25f1048fe09
+
+COCOAPODS: 1.7.1
