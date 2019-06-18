@@ -1,16 +1,16 @@
 //
-//  HomeViewController.swift
-//  360Video
+//  FFHomeViewController.swift
+//  360Spin
 //
 //  Created by apple on 5/21/19.
 //  Copyright © 2019 apple. All rights reserved.
 //
 
 import UIKit
-import CSSpin
+import FFSpin
 import MagicalRecord
 
-class HomeViewController: UIViewController, CSCaptureViewControllerDelegate, Spin360ListViewControllerDelegate, ProcessAndUploadViewControllerDelegate {
+class FFHomeViewController: UIViewController, FFCameraDelegate, FFSpin360ListViewControllerDelegate, FFProcessAndUploadViewControllerDelegate {
     var capture360Button : UIButton!
     var processingButton : UIButton!
     var preview360Button : UIButton!
@@ -150,12 +150,18 @@ class HomeViewController: UIViewController, CSCaptureViewControllerDelegate, Spi
      - Pano Upload
     */
     func callCaptureVC(captureState: NSInteger, title: String) {
+        let uuid = NSUUID().uuidString
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        print("Documents Path: \(documentsPath)")
+
         if captureState == CAPTURE_STATE.CAPTURE_360_STATE.rawValue || captureState == CAPTURE_STATE.PREVIEW_STATE.rawValue || captureState == CAPTURE_STATE.PANO_STATE.rawValue || captureState == CAPTURE_STATE.PANO_PREVIEW_STATE.rawValue {
             self.landScapeOrientation()
             
-            let vc:CSCaptureViewController = CSCaptureViewController.init(nibName: nil, bundle: nil)
+            let vc:FFCamera = FFCamera.init(nibName: nil, bundle: nil)
             vc.delegate = self
-            vc.captureState = captureState;
+            vc.captureState = captureState
+            vc.spinGuid = uuid
+            vc.documentsPath = documentsPath
             vc.title = title
             let navcon:UINavigationController = UINavigationController.init(rootViewController: vc)
             self.present(navcon, animated: true, completion: {
@@ -164,7 +170,7 @@ class HomeViewController: UIViewController, CSCaptureViewControllerDelegate, Spi
         } else {
             self.portraitOrientation()
             
-            let vc:ProcessAndUploadViewController = ProcessAndUploadViewController.init(nibName: nil, bundle: nil)
+            let vc:FFProcessAndUploadViewController = FFProcessAndUploadViewController.init(nibName: nil, bundle: nil)
             vc.title = title
             vc.delegate = self
             vc.captureState = captureState
@@ -180,7 +186,7 @@ class HomeViewController: UIViewController, CSCaptureViewControllerDelegate, Spi
     }
     
     @objc func tappedLoggingButton(_ sender:UIButton){
-        let vc:LoggingViewController = LoggingViewController.init(nibName: nil, bundle: nil)
+        let vc:FFLoggingViewController = FFLoggingViewController.init(nibName: nil, bundle: nil)
         vc.title = "Logging"
         let navcon:UINavigationController = UINavigationController.init(rootViewController: vc)
         self.present(navcon, animated: true, completion: {
@@ -191,7 +197,7 @@ class HomeViewController: UIViewController, CSCaptureViewControllerDelegate, Spi
     callListVC method allows to display 360 Capture and Pano list screens
     */
     func callListVC(captureState: NSInteger, title: String, listType: String) {
-        let vc:Spin360ListViewController = Spin360ListViewController.init(nibName: nil, bundle: nil)
+        let vc:FFSpin360ListViewController = FFSpin360ListViewController.init(nibName: nil, bundle: nil)
         vc.title = title
         vc.delegate = self
         vc.captureState = captureState
@@ -209,7 +215,7 @@ class HomeViewController: UIViewController, CSCaptureViewControllerDelegate, Spi
     /**
     didSelectAction method allows required screens to perform based on functionalities
     */
-    func didSelectAction(_ sender:Spin360ListViewController, captureState: NSInteger, capturedObject: Spin360List) {
+    func didSelectAction(_ sender:FFSpin360ListViewController, captureState: NSInteger, capturedObject: Spin360List) {
         self.selSpin360Object = capturedObject
         
         var mesage : String!
@@ -250,9 +256,8 @@ class HomeViewController: UIViewController, CSCaptureViewControllerDelegate, Spi
     /**
      saveRecordInDB method allows the capture 360 and pano records saving to Database
     */
-    func saveRecordInDB (message: String) {
+    func saveRecordInDB (message: String, spinGudid: String, doucmentsPath: String) {
         if (message == Constants.CAPTURING_COMPLETED || message == Constants.PANO_COMPLETED) {
-            let uuid = NSUUID().uuidString
             
             let date = Date()
             let formatter = DateFormatter()
@@ -262,16 +267,16 @@ class HomeViewController: UIViewController, CSCaptureViewControllerDelegate, Spi
             let result = formatter.string(from: date)
             
             let spin360Object : Spin360List! = Spin360List.mr_createEntity()
-            spin360Object.videoName = uuid
-            spin360Object.videoGUID = uuid
+            spin360Object.spinName = spinGudid
+            spin360Object.spinGUID = spinGudid
             spin360Object.timeStamp = result
             spin360Object.uploadStatus = Constants.PENDING
             spin360Object.processStatus = Constants.PENDING
             spin360Object.dateForSorting = date
             if (message == Constants.CAPTURING_COMPLETED) {
-                spin360Object.videoType = Constants.SPIN_360
+                spin360Object.spinType = Constants.SPIN_360
             } else {
-                spin360Object.videoType = Constants.PANO
+                spin360Object.spinType = Constants.PANO
             }
         }
         
@@ -286,11 +291,11 @@ class HomeViewController: UIViewController, CSCaptureViewControllerDelegate, Spi
     }
     
     /**
-     spinCompleteAction allows to save record in database and displays alert messages
+     spinDidCompleteAction allows to save record in database and displays alert messages
     */
-    @objc func spinCompleteAction(_ message: String ) {
-        print("Stop Button Tapped")
-        self.saveRecordInDB(message: message)
+    
+    @objc func spinDidCompleteAction(_ message: String, spinGUID guid: String, fromDirectory documentsPath: String) {
+        self.saveRecordInDB(message: message, spinGudid: guid, doucmentsPath: documentsPath)
         
         let isEqual = (message == Constants.PANO_COMPLETED || message == Constants.PANO_PREVIEW_COMPLETED || message == Constants.PANO_UPLOADING_COMPLETED)
         if isEqual {
@@ -300,18 +305,24 @@ class HomeViewController: UIViewController, CSCaptureViewControllerDelegate, Spi
         }
     }
     
+
     /**
-     spinCancelAction allows to stops current action and displays alert messages
+     spinDidCancelAction allows to stops current action and displays alert messages
     */
-    @objc func spinCancelAction(_ message : String ){
-        print("Cancel Button Tapped")
-        
+    @objc func spinDidCancelAction(_ message : String ){
         let isEqual = (message == Constants.PANO_CANCELLED || message == Constants.PANO_PREVIEW_CLOSED || message == Constants.PANO_UPLOAD_CANCELLED)
         if isEqual {
             showAlert(alert: message, title: Constants.PANO)
         } else {
             showAlert(alert: message, title: Constants.SPIN_360)
         }
+    }
+    
+    /**
+     spinCapturingFailed allows to display the 360/pano capturing failed alert message
+     */
+    @objc func spinCapturingFailed(_ failureMessage: String) {
+        showAlert(alert: failureMessage, title: Constants.SPIN_360)
     }
 }
 

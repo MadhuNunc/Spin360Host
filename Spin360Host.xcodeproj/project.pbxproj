@@ -14,14 +14,14 @@
 		28CCD81122B004A600D674E6 /* Spin360HostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD81022B004A600D674E6 /* Spin360HostTests.swift */; };
 		28CCD81C22B004A600D674E6 /* Spin360HostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD81B22B004A600D674E6 /* Spin360HostUITests.swift */; };
 		28CCD82B22B004EA00D674E6 /* Spin360.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD82922B004EA00D674E6 /* Spin360.xcdatamodeld */; };
-		28CCD8B822B397B500D674E6 /* Spin360TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B022B397B400D674E6 /* Spin360TableViewCell.swift */; };
-		28CCD8B922B397B500D674E6 /* LoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B122B397B400D674E6 /* LoggingViewController.swift */; };
-		28CCD8BA22B397B500D674E6 /* Spin360ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B222B397B400D674E6 /* Spin360ListViewController.swift */; };
-		28CCD8BB22B397B500D674E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B322B397B400D674E6 /* HomeViewController.swift */; };
-		28CCD8BC22B397B500D674E6 /* LoggingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B422B397B400D674E6 /* LoggingTableViewCell.swift */; };
-		28CCD8BD22B397B500D674E6 /* LoggingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B522B397B500D674E6 /* LoggingDetailsViewController.swift */; };
+		28CCD8B822B397B500D674E6 /* FFSpin360TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B022B397B400D674E6 /* FFSpin360TableViewCell.swift */; };
+		28CCD8B922B397B500D674E6 /* FFLoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B122B397B400D674E6 /* FFLoggingViewController.swift */; };
+		28CCD8BA22B397B500D674E6 /* FFSpin360ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B222B397B400D674E6 /* FFSpin360ListViewController.swift */; };
+		28CCD8BB22B397B500D674E6 /* FFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B322B397B400D674E6 /* FFHomeViewController.swift */; };
+		28CCD8BC22B397B500D674E6 /* FFLoggingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B422B397B400D674E6 /* FFLoggingTableViewCell.swift */; };
+		28CCD8BD22B397B500D674E6 /* FFLoggingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B522B397B500D674E6 /* FFLoggingDetailsViewController.swift */; };
 		28CCD8BE22B397B500D674E6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B622B397B500D674E6 /* Constants.swift */; };
-		28CCD8BF22B397B500D674E6 /* ProcessAndUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B722B397B500D674E6 /* ProcessAndUploadViewController.swift */; };
+		28CCD8BF22B397B500D674E6 /* FFProcessAndUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCD8B722B397B500D674E6 /* FFProcessAndUploadViewController.swift */; };
 		F6C9E33FABF3FE80A9F729D5 /* Pods_Spin360Host.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212EDB40BC7BEB77EA43DEE /* Pods_Spin360Host.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,14 +57,15 @@
 		28CCD81B22B004A600D674E6 /* Spin360HostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spin360HostUITests.swift; sourceTree = "<group>"; };
 		28CCD81D22B004A600D674E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28CCD82A22B004EA00D674E6 /* Spin360.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spin360.xcdatamodel; sourceTree = "<group>"; };
-		28CCD8B022B397B400D674E6 /* Spin360TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spin360TableViewCell.swift; sourceTree = "<group>"; };
-		28CCD8B122B397B400D674E6 /* LoggingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingViewController.swift; sourceTree = "<group>"; };
-		28CCD8B222B397B400D674E6 /* Spin360ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spin360ListViewController.swift; sourceTree = "<group>"; };
-		28CCD8B322B397B400D674E6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		28CCD8B422B397B400D674E6 /* LoggingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingTableViewCell.swift; sourceTree = "<group>"; };
-		28CCD8B522B397B500D674E6 /* LoggingDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingDetailsViewController.swift; sourceTree = "<group>"; };
+		28CCD8B022B397B400D674E6 /* FFSpin360TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFSpin360TableViewCell.swift; sourceTree = "<group>"; };
+		28CCD8B122B397B400D674E6 /* FFLoggingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLoggingViewController.swift; sourceTree = "<group>"; };
+		28CCD8B222B397B400D674E6 /* FFSpin360ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFSpin360ListViewController.swift; sourceTree = "<group>"; };
+		28CCD8B322B397B400D674E6 /* FFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFHomeViewController.swift; sourceTree = "<group>"; };
+		28CCD8B422B397B400D674E6 /* FFLoggingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLoggingTableViewCell.swift; sourceTree = "<group>"; };
+		28CCD8B522B397B500D674E6 /* FFLoggingDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLoggingDetailsViewController.swift; sourceTree = "<group>"; };
 		28CCD8B622B397B500D674E6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		28CCD8B722B397B500D674E6 /* ProcessAndUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessAndUploadViewController.swift; sourceTree = "<group>"; };
+		28CCD8B722B397B500D674E6 /* FFProcessAndUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFProcessAndUploadViewController.swift; sourceTree = "<group>"; };
+		28CCD9EB22B7F3ED00D674E6 /* Spin360Host-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spin360Host-Bridging-Header.h"; sourceTree = "<group>"; };
 		C377C91665C0ADC429180C7C /* Pods-Spin360Host.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spin360Host.release.xcconfig"; path = "Target Support Files/Pods-Spin360Host/Pods-Spin360Host.release.xcconfig"; sourceTree = "<group>"; };
 		C383FA946EE1C2D4546D4D10 /* Pods-Spin360Host.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spin360Host.debug.xcconfig"; path = "Target Support Files/Pods-Spin360Host/Pods-Spin360Host.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,19 +122,18 @@
 			isa = PBXGroup;
 			children = (
 				28CCD7FB22B004A500D674E6 /* AppDelegate.swift */,
-				28CCD8B322B397B400D674E6 /* HomeViewController.swift */,
-				28CCD8B222B397B400D674E6 /* Spin360ListViewController.swift */,
-				28CCD8B022B397B400D674E6 /* Spin360TableViewCell.swift */,
-				28CCD8B722B397B500D674E6 /* ProcessAndUploadViewController.swift */,
-				28CCD8B122B397B400D674E6 /* LoggingViewController.swift */,
-				28CCD8B522B397B500D674E6 /* LoggingDetailsViewController.swift */,
-				28CCD8B422B397B400D674E6 /* LoggingTableViewCell.swift */,
-				28CCD8B622B397B500D674E6 /* Constants.swift */,
+				28CCD9F522B8A92600D674E6 /* Home */,
+				28CCD9F722B8A94000D674E6 /* SpinList */,
+				28CCD9F922B8A97600D674E6 /* CustomCells */,
+				28CCD9FA22B8A99000D674E6 /* ProcessAndUpload */,
+				28CCD9FB22B8A9BE00D674E6 /* Logging */,
+				28CCD9FD22B8A9D500D674E6 /* Constants */,
 				28CCD7FF22B004A500D674E6 /* Main.storyboard */,
 				28CCD80222B004A500D674E6 /* Assets.xcassets */,
 				28CCD80422B004A500D674E6 /* LaunchScreen.storyboard */,
 				28CCD80722B004A500D674E6 /* Info.plist */,
 				28CCD82922B004EA00D674E6 /* Spin360.xcdatamodeld */,
+				28CCD9EB22B7F3ED00D674E6 /* Spin360Host-Bridging-Header.h */,
 			);
 			path = Spin360Host;
 			sourceTree = "<group>";
@@ -154,6 +154,56 @@
 				28CCD81D22B004A600D674E6 /* Info.plist */,
 			);
 			path = Spin360HostUITests;
+			sourceTree = "<group>";
+		};
+		28CCD9F522B8A92600D674E6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				28CCD8B322B397B400D674E6 /* FFHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		28CCD9F722B8A94000D674E6 /* SpinList */ = {
+			isa = PBXGroup;
+			children = (
+				28CCD8B222B397B400D674E6 /* FFSpin360ListViewController.swift */,
+			);
+			path = SpinList;
+			sourceTree = "<group>";
+		};
+		28CCD9F922B8A97600D674E6 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				28CCD8B022B397B400D674E6 /* FFSpin360TableViewCell.swift */,
+				28CCD8B422B397B400D674E6 /* FFLoggingTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		28CCD9FA22B8A99000D674E6 /* ProcessAndUpload */ = {
+			isa = PBXGroup;
+			children = (
+				28CCD8B722B397B500D674E6 /* FFProcessAndUploadViewController.swift */,
+			);
+			path = ProcessAndUpload;
+			sourceTree = "<group>";
+		};
+		28CCD9FB22B8A9BE00D674E6 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				28CCD8B122B397B400D674E6 /* FFLoggingViewController.swift */,
+				28CCD8B522B397B500D674E6 /* FFLoggingDetailsViewController.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		28CCD9FD22B8A9D500D674E6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				28CCD8B622B397B500D674E6 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		2DBEB3F8F673E304C144C228 /* Pods */ = {
@@ -243,6 +293,7 @@
 				TargetAttributes = {
 					28CCD7F722B004A500D674E6 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					28CCD80B22B004A600D674E6 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -348,15 +399,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28CCD8B922B397B500D674E6 /* LoggingViewController.swift in Sources */,
+				28CCD8B922B397B500D674E6 /* FFLoggingViewController.swift in Sources */,
 				28CCD7FC22B004A500D674E6 /* AppDelegate.swift in Sources */,
-				28CCD8BC22B397B500D674E6 /* LoggingTableViewCell.swift in Sources */,
+				28CCD8BC22B397B500D674E6 /* FFLoggingTableViewCell.swift in Sources */,
 				28CCD82B22B004EA00D674E6 /* Spin360.xcdatamodeld in Sources */,
-				28CCD8B822B397B500D674E6 /* Spin360TableViewCell.swift in Sources */,
-				28CCD8BF22B397B500D674E6 /* ProcessAndUploadViewController.swift in Sources */,
-				28CCD8BD22B397B500D674E6 /* LoggingDetailsViewController.swift in Sources */,
-				28CCD8BA22B397B500D674E6 /* Spin360ListViewController.swift in Sources */,
-				28CCD8BB22B397B500D674E6 /* HomeViewController.swift in Sources */,
+				28CCD8B822B397B500D674E6 /* FFSpin360TableViewCell.swift in Sources */,
+				28CCD8BF22B397B500D674E6 /* FFProcessAndUploadViewController.swift in Sources */,
+				28CCD8BD22B397B500D674E6 /* FFLoggingDetailsViewController.swift in Sources */,
+				28CCD8BA22B397B500D674E6 /* FFSpin360ListViewController.swift in Sources */,
+				28CCD8BB22B397B500D674E6 /* FFHomeViewController.swift in Sources */,
 				28CCD8BE22B397B500D674E6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,18 +584,26 @@
 			baseConfigurationReference = C383FA946EE1C2D4546D4D10 /* Pods-Spin360Host.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2B622VQJ24;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Spin360Host/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.360video.Spin360Host;
+				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.Spin360Host;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Spin360Host/Spin360Host-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -553,18 +612,25 @@
 			baseConfigurationReference = C377C91665C0ADC429180C7C /* Pods-Spin360Host.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2B622VQJ24;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Spin360Host/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.360video.Spin360Host;
+				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.Spin360Host;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Spin360Host/Spin360Host-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};
@@ -581,7 +647,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.360video.Spin360HostTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.Spin360HostTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -602,7 +668,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.360video.Spin360HostTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.Spin360HostTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -622,7 +688,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.360video.Spin360HostUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.Spin360HostUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -642,7 +708,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.360video.Spin360HostUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.concatsys.Spin360HostUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

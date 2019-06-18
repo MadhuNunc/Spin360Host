@@ -1,5 +1,5 @@
 //
-//  LoggingTableViewCell.swift
+//  FFLoggingTableViewCell.swift
 //  Capture360Demo
 //
 //  Created by apple on 6/13/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoggingTableViewCell: UITableViewCell {
+class FFLoggingTableViewCell: UITableViewCell {
     var logNameLabel: UILabel!
     var timeStampLabel: UILabel!
     

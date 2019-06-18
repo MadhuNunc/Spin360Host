@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B523E26E02B2005983077ECDD5A9D929"
-               BuildableName = "CSSpin"
-               BlueprintName = "CSSpin"
+               BlueprintIdentifier = "E321B88FD1D24B9DD8A40706E0E3BE6D"
+               BuildableName = "FFSpin"
+               BlueprintName = "FFSpin"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

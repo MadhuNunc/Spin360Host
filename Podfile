@@ -5,6 +5,6 @@ target 'Spin360Host' do
   use_frameworks!
 
   pod "MagicalRecord"
-  pod "CSSpin"
+  pod "FFSpin"
 
 end

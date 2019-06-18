@@ -10,13 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Spin360Host/Spin360TableViewCell.swift"
-            timestampString = "582200732.1679831"
+            timestampString = "582526912.70257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "init(frame:reuseIdentifier:)"
-            landmarkType = "7">
+            startingLineNumber = "56"
+            endingLineNumber = "56">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,12 +23,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Spin360Host/Spin360TableViewCell.swift"
-            timestampString = "582200732.168051"
+            filePath = "Spin360Host/CSModuleSync.m"
+            timestampString = "582525913.715521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56">
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-updateLogTime"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

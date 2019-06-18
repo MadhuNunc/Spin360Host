@@ -1,5 +1,5 @@
 //
-//  ProcessAndUploadViewController.swift
+//  FFProcessAndUploadViewController.swift
 //  Capture360Demo
 //
 //  Created by apple on 6/13/19.
@@ -7,15 +7,15 @@
 //
 
 import UIKit
-import CSSpin
+import FFSpin
 import MagicalRecord
 
-protocol ProcessAndUploadViewControllerDelegate {
+protocol FFProcessAndUploadViewControllerDelegate {
     func showAlert(alert: String, title: String)
 }
 
-class ProcessAndUploadViewController: UIViewController, CSModuleSyncDelegate {
-    var delegate:ProcessAndUploadViewControllerDelegate?
+class FFProcessAndUploadViewController: UIViewController, FFManagerDelegate {
+    var delegate:FFProcessAndUploadViewControllerDelegate?
 
     var captureState: NSInteger!
     
@@ -52,7 +52,7 @@ class ProcessAndUploadViewController: UIViewController, CSModuleSyncDelegate {
         }
         controlsView.addSubview(self.processButton)
         
-        self.processLabel = UILabel(frame: CGRect(x: (self.view.frame.width-200)/2, y: (self.view.frame.height-30)/2, width: 200, height: 30))
+        self.processLabel = UILabel(frame: CGRect(x: (self.view.frame.width-220)/2, y: (self.view.frame.height-30)/2, width: 220, height: 30))
         self.processLabel.textAlignment = .center
         self.processLabel.textColor = .white
         self.view.addSubview(self.processLabel)
@@ -67,7 +67,7 @@ class ProcessAndUploadViewController: UIViewController, CSModuleSyncDelegate {
     }
     
     @objc func tappedCancelButton(_ sender:UIButton) {
-        CSModuleSync.sharedService().stopProgress()
+        FFManager.sharedService().stopProgress()
         self.dismiss(animated: true) {
             
         }
@@ -78,9 +78,9 @@ class ProcessAndUploadViewController: UIViewController, CSModuleSyncDelegate {
 
         if (!self.processing) {
             self.processing = true;
-            CSModuleSync.sharedService().startProgressAndObject(self, andCaptureState: captureState)
+            FFManager.sharedService().startProgressAndObject(self, andCaptureState: captureState)
         } else {
-            CSModuleSync.sharedService().stopProgress()
+            FFManager.sharedService().stopProgress()
             self.dismiss(animated: true) {
                 //self.updateRecordInDB()
                 if (self.captureState == CAPTURE_STATE.PANO_UPLOAD_STATE.rawValue) {
@@ -130,10 +130,10 @@ class ProcessAndUploadViewController: UIViewController, CSModuleSyncDelegate {
         
     }
     
-    func updateProgress(_ remainingTime: Int32, andCaptureState captureState: Int) {
-        self.processLabel.text = "Processing 360...(\(remainingTime))"
+    func updateProgress(_ progressStage: Int32, andCaptureState captureState: Int) {
+        self.processLabel.text = "Processing 360...(Stage \(progressStage))"
         
-        if (remainingTime == 0) {
+        if (progressStage == 5) {
             self.dismiss(animated: true) {
                 self.updateRecordInDB()
                 self.delegate?.showAlert(alert: Constants.PROCESSING_COMPLETED , title: Constants.SPIN_360)

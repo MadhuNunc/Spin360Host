@@ -1,5 +1,5 @@
 //
-//  LoggingViewController.swift
+//  FFLoggingViewController.swift
 //  Capture360Demo
 //
 //  Created by apple on 6/12/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoggingViewController: UIViewController {
+class FFLoggingViewController: UIViewController {
     var errorButton : UIButton!
     var warnButton : UIButton!
     var infoButton : UIButton!
@@ -62,7 +62,7 @@ class LoggingViewController: UIViewController {
     }
     
     func callLoggingDetails (title: String, logType: NSInteger) {
-        let vc:LoggingDetailsViewController = LoggingDetailsViewController.init(nibName: nil, bundle: nil)
+        let vc:FFLoggingDetailsViewController = FFLoggingDetailsViewController.init(nibName: nil, bundle: nil)
         vc.title = title
         vc.logType = logType
         let navcon:UINavigationController = UINavigationController.init(rootViewController: vc)

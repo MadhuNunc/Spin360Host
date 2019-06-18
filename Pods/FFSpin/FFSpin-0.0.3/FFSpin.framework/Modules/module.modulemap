@@ -1,0 +1,6 @@
+framework module FFSpin {
+  umbrella header "FFSpin.h"
+
+  export *
+  module * { export * }
+}

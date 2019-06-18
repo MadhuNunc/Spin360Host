@@ -1,5 +1,5 @@
 //
-//  LoggingDetailsViewController.swift
+//  FFLoggingDetailsViewController.swift
 //  Capture360Demo
 //
 //  Created by apple on 6/13/19.
@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import CSSpin
+import FFSpin
 import MagicalRecord
 
-class LoggingDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CSModuleSyncDelegate  {
+class FFLoggingDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, FFManagerDelegate  {
     var logType: NSInteger = 0
     var predicate: NSPredicate!
     
@@ -25,7 +25,7 @@ class LoggingDetailsViewController: UIViewController, UITableViewDelegate, UITab
         let button1 = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelTapped))
         self.navigationItem.leftBarButtonItem  = button1
         
-        CSModuleSync.sharedService().updateLogAndObject(self, andLogType: logType)
+        FFManager.sharedService().updateLogAndObject(self, andLogType: logType)
         
         logList = LogList.mr_findAllSorted(by: "dateForSorting", ascending: false, with:predicate) as? [LogList]
         self.cofigureTableview()
@@ -33,7 +33,7 @@ class LoggingDetailsViewController: UIViewController, UITableViewDelegate, UITab
     
     func cofigureTableview() {
         loggingListTableView = UITableView(frame: self.view.bounds)
-        loggingListTableView.register(LoggingTableViewCell.self, forCellReuseIdentifier: cellId)
+        loggingListTableView.register(FFLoggingTableViewCell.self, forCellReuseIdentifier: cellId)
         loggingListTableView.dataSource = self
         loggingListTableView.delegate = self
         self.view.addSubview(loggingListTableView)
@@ -43,11 +43,11 @@ class LoggingDetailsViewController: UIViewController, UITableViewDelegate, UITab
         if (logType == LOG_TYPE.LOG_ERROR.rawValue) {
             predicate = NSPredicate(format: "(logType = '\(Constants.LOG_ERROR)')")
         } else if (logType == LOG_TYPE.LOG_WARN.rawValue)  {
-            predicate = NSPredicate(format: "(logType = '\(Constants.LOG_WARN)')")
+            predicate = NSPredicate(format: "(logType = '\(Constants.LOG_WARN)') || (logType = '\(Constants.LOG_ERROR)')")
         } else if (logType == LOG_TYPE.LOG_INFO.rawValue) {
-            predicate = NSPredicate(format: "(logType = '\(Constants.LOG_INFO)')")
+            predicate = NSPredicate(format: "(logType = '\(Constants.LOG_INFO)') || (logType = '\(Constants.LOG_WARN)') || (logType = '\(Constants.LOG_ERROR)')")
         } else if (logType == LOG_TYPE.LOG_DEBUG.rawValue) {
-            predicate = NSPredicate(format: "(logType = '\(Constants.LOG_DEBUG)')")
+            predicate = NSPredicate(format: "(logType = '\(Constants.LOG_DEBUG)') || (logType = '\(Constants.LOG_INFO)') || (logType = '\(Constants.LOG_WARN)') || (logType = '\(Constants.LOG_ERROR)')")
         } else if (logType == LOG_TYPE.LOG_TRACE.rawValue) {
             predicate = NSPredicate(format: "(logType = '\(Constants.LOG_TRACE)')")
         }
@@ -94,7 +94,7 @@ class LoggingDetailsViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     @objc func cancelTapped() {
-        CSModuleSync.sharedService().stopProgress()
+        FFManager.sharedService().stopProgress()
         self.dismiss(animated: true, completion: nil)
     }
    
@@ -112,7 +112,7 @@ class LoggingDetailsViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = LoggingTableViewCell(frame:CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 80), reuseIdentifier: cellId)
+        let cell = FFLoggingTableViewCell(frame:CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 80), reuseIdentifier: cellId)
         
         let logObject = logList[indexPath.row]
 

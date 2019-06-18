@@ -1,5 +1,5 @@
 //
-//  Spin360ListViewController.swift
+//  FFSpin360ListViewController.swift
 //  Spin360Host
 //
 //  Created by apple on 6/11/19.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol Spin360ListViewControllerDelegate {
-    func didSelectAction(_ sender:Spin360ListViewController, captureState: NSInteger, capturedObject: Spin360List)
+protocol FFSpin360ListViewControllerDelegate {
+    func didSelectAction(_ sender:FFSpin360ListViewController, captureState: NSInteger, capturedObject: Spin360List)
 }
 
-class Spin360ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var delegate:Spin360ListViewControllerDelegate?
+class FFSpin360ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var delegate:FFSpin360ListViewControllerDelegate?
     var captureState: NSInteger = 0
     var listType: String!
     
@@ -31,9 +31,9 @@ class Spin360ListViewController: UIViewController, UITableViewDelegate, UITableV
         
         let predicate: NSPredicate
         if (listType == Constants.PROCESS_360 || listType == Constants.PREVIEW_360 || listType == Constants.UPLOAD_360) {
-            predicate = NSPredicate(format: "(videoType = '360 Spin')")
+            predicate = NSPredicate(format: "(spinType = '360 Spin')")
         } else {
-            predicate = NSPredicate(format: "(videoType = 'Pano')")
+            predicate = NSPredicate(format: "(spinType = 'Pano')")
         }
         
         spin360List = Spin360List.mr_findAllSorted(by: "dateForSorting", ascending: false, with: predicate) as? [Spin360List]
@@ -48,7 +48,7 @@ class Spin360ListViewController: UIViewController, UITableViewDelegate, UITableV
     
     func cofigureTableview() {
         spinListTableView = UITableView(frame: self.view.bounds)
-        spinListTableView.register(Spin360TableViewCell.self, forCellReuseIdentifier: cellId)
+        spinListTableView.register(FFSpin360TableViewCell.self, forCellReuseIdentifier: cellId)
         spinListTableView.dataSource = self
         spinListTableView.delegate = self
         self.view.addSubview(spinListTableView)
@@ -73,10 +73,10 @@ class Spin360ListViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = Spin360TableViewCell(frame:CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 110), reuseIdentifier: cellId)
+        let cell = FFSpin360TableViewCell(frame:CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 110), reuseIdentifier: cellId)
         
         let spinObject = spin360List[indexPath.row]
-        cell.videoNameLabel.text = spinObject.videoName
+        cell.spinNameLabel.text = spinObject.spinName
         cell.timeStampLabel.text = spinObject.timeStamp
         if (listType == Constants.PROCESS_360 || listType == Constants.PREVIEW_360) {
             cell.statusLabel.text = "Process Status: \(spinObject.processStatus ?? "N/A")"

@@ -1,5 +1,5 @@
 //
-//  Spin360TableViewCell.swift
+//  FFSpin360TableViewCell.swift
 //  Spin360Host
 //
 //  Created by apple on 6/11/19.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class Spin360TableViewCell: UITableViewCell {
+class FFSpin360TableViewCell: UITableViewCell {
     var thumbImage: UIImageView!
-    var videoNameLabel: UILabel!
+    var spinNameLabel: UILabel!
     var timeStampLabel: UILabel!
     var statusLabel: UILabel!
 
@@ -22,17 +22,17 @@ class Spin360TableViewCell: UITableViewCell {
         thumbImage.contentMode = .scaleAspectFit
         thumbImage.clipsToBounds = true
         
-        videoNameLabel = self.createLabel(frame: CGRect(x: thumbImage.frame.origin.x+thumbImage.frame.size.width+20, y: 10, width: frame.size.width-(thumbImage.frame.size.width+20+20), height: 20), fontSize: 14)
-        videoNameLabel.font = UIFont.boldSystemFont(ofSize: 14)
-
-        timeStampLabel = self.createLabel(frame: CGRect(x: thumbImage.frame.origin.x+thumbImage.frame.size.width+20, y: videoNameLabel.frame.origin.y+videoNameLabel.frame.size.height+10, width: frame.size.width-(thumbImage
+        spinNameLabel = self.createLabel(frame: CGRect(x: thumbImage.frame.origin.x+thumbImage.frame.size.width+20, y: 10, width: frame.size.width-(thumbImage.frame.size.width+20+20), height: 20), fontSize: 14)
+        spinNameLabel.font = UIFont.boldSystemFont(ofSize: 14)
+        
+        timeStampLabel = self.createLabel(frame: CGRect(x: thumbImage.frame.origin.x+thumbImage.frame.size.width+20, y: spinNameLabel.frame.origin.y+spinNameLabel.frame.size.height+10, width: frame.size.width-(thumbImage
             .frame.size.width+20+20), height: 30), fontSize: 13)
         
         statusLabel = self.createLabel(frame: CGRect(x: thumbImage.frame.origin.x+thumbImage.frame.size.width+20, y: timeStampLabel.frame.origin.y+timeStampLabel.frame.size.height+10, width: (frame.size.width-(thumbImage
             .frame.size.width+20+20)), height: 20), fontSize: 12)
-
+        
         addSubview(thumbImage)
-        addSubview(videoNameLabel)
+        addSubview(spinNameLabel)
         addSubview(timeStampLabel)
         addSubview(statusLabel)
     }

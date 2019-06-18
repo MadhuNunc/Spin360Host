@@ -1,5 +1,5 @@
 //
-//  CSModuleSync.h
+//  FFManager.h
 //  Capture360Demo
 //
 //  Created by apple on 6/13/19.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CSModuleSyncDelegate <NSObject>
+@protocol FFManagerDelegate <NSObject>
 @optional
 /**
  * Called uploadProgress delegate to update 360 capture/ pano upload progress and capture state
@@ -18,7 +18,7 @@
 /**
  * Called updateProgress delegate to update 360 capture process elapsed time and capture state
  */
--(void)updateProgress:(int)remainingTime andCaptureState:(NSInteger)captureState;
+-(void)updateProgress:(int)progressStage andCaptureState:(NSInteger)captureState;
 
 /**
  * Called updateLogWithLogType delegate to update log type and message
@@ -28,12 +28,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CSModuleSync : NSObject
+@interface FFManager : NSObject
 
 /**
  * Implement this delegate to be informed of the upload, process and log functionalities.
  */
-@property (nonatomic, assign) id <CSModuleSyncDelegate> delegate;
+@property (nonatomic, assign) id <FFManagerDelegate> delegate;
 
 /**
  * captureState getter to observe the current capture state
@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic,strong) NSTimer *updateTimer;
 
-+ (CSModuleSync *)sharedService;
++ (FFManager *)sharedService;
 
 /**
  * @summary Called startProgressAndObject action to start 360 capture process/upload and pano upload
