@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="FFRooftopSettings" representedClassName="FFRooftopSettings" syncable="YES" codeGenerationType="class">
+        <attribute name="carILotId" optional="YES" attributeType="String"/>
+        <attribute name="rooftopGUID" optional="YES" attributeType="String"/>
+        <attribute name="rooftopID" optional="YES" attributeType="String"/>
+        <attribute name="userName" optional="YES" attributeType="String"/>
+        <attribute name="zoomValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Spin360List" representedClassName="Spin360List" syncable="YES" codeGenerationType="class">
+        <attribute name="carILotId" optional="YES" attributeType="String"/>
+        <attribute name="panoDateForSorting" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="panoPath" optional="YES" attributeType="String"/>
+        <attribute name="panoTimeStamp" optional="YES" attributeType="String"/>
+        <attribute name="panoUploadProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="panoUploadStatus" optional="YES" attributeType="String"/>
+        <attribute name="processProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="processStatus" optional="YES" attributeType="String"/>
+        <attribute name="remoteDeleteStatus" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="remotePanoDeleteStatus" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rooftopGUID" optional="YES" attributeType="String"/>
+        <attribute name="rooftopID" optional="YES" attributeType="String"/>
+        <attribute name="spinDateForSorting" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="spinName" optional="YES" attributeType="String"/>
+        <attribute name="spinPath" optional="YES" attributeType="String"/>
+        <attribute name="spinTimeStamp" optional="YES" attributeType="String"/>
+        <attribute name="spinUploadProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="spinUploadStatus" optional="YES" attributeType="String"/>
+        <attribute name="userName" optional="YES" attributeType="String"/>
+        <attribute name="vehicleId" optional="YES" attributeType="String"/>
+        <attribute name="videoGUID" optional="YES" attributeType="String"/>
+        <attribute name="vin" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="FFRooftopSettings" positionX="-63" positionY="135" width="128" height="118"/>
+        <element name="Spin360List" positionX="-63" positionY="-18" width="128" height="373"/>
+    </elements>
+</model>

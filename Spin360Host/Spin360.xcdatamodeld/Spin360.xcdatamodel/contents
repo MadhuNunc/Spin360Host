@@ -8,15 +8,18 @@
     </entity>
     <entity name="Spin360List" representedClassName="Spin360List" syncable="YES" codeGenerationType="class">
         <attribute name="dateForSorting" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="processProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="processStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spinFK" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="spinGUID" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="spinName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="spinType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="timeStamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploadProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="uploadStatus" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="LogList" positionX="-36" positionY="63" width="128" height="105"/>
-        <element name="Spin360List" positionX="-63" positionY="-18" width="128" height="150"/>
+        <element name="Spin360List" positionX="-63" positionY="-18" width="128" height="195"/>
     </elements>
 </model>

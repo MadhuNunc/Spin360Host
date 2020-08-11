@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FFVehicleList" representedClassName="FFVehicleList" syncable="YES" codeGenerationType="class">
+        <attribute name="iLotId" optional="YES" attributeType="String"/>
+        <attribute name="iLotName" optional="YES" attributeType="String"/>
+        <attribute name="panoDateForSorting" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="panoId" optional="YES" attributeType="String"/>
+        <attribute name="panoTimeStamp" optional="YES" attributeType="String"/>
+        <attribute name="panoUploadProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="panoUploadStatus" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="photos" optional="YES" attributeType="String"/>
+        <attribute name="photosProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="photosStatus" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="processProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="processStatus" optional="YES" attributeType="String"/>
+        <attribute name="remotePanoId" optional="YES" attributeType="String"/>
+        <attribute name="remoteSpinId" optional="YES" attributeType="String"/>
+        <attribute name="rooftopID" optional="YES" attributeType="String"/>
+        <attribute name="spinDateForSorting" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="spinId" optional="YES" attributeType="String"/>
+        <attribute name="spinTimeStamp" optional="YES" attributeType="String"/>
+        <attribute name="spinUploadProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="spinUploadStatus" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String"/>
+        <attribute name="vehicleName" optional="YES" attributeType="String"/>
+        <attribute name="vin" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="FFVehicleList" positionX="-63" positionY="-18" width="128" height="388"/>
+    </elements>
+</model>

@@ -1,22 +1,44 @@
 PODS:
-  - FFSpin (0.0.3)
-  - MagicalRecord (2.3.2):
-    - MagicalRecord/Core (= 2.3.2)
-  - MagicalRecord/Core (2.3.2)
+  - Alamofire (4.8.2)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
+  - FFSpinSDK (2.4.3):
+    - CocoaLumberjack
+    - SFHFKeychainUtils
+  - Kingfisher (5.7.0)
+  - MSCircularProgressView (1.2.0)
+  - SFHFKeychainUtils (1.0.0)
 
 DEPENDENCIES:
-  - FFSpin
-  - MagicalRecord
+  - Alamofire
+  - CocoaLumberjack
+  - FFSpinSDK (from `http://202.53.86.13:8088/FFspin/FFSpinSDK-2.4.3.podspec`)
+  - Kingfisher
+  - MSCircularProgressView (= 1.2.0)
+  - SFHFKeychainUtils
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - FFSpin
-    - MagicalRecord
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CocoaLumberjack
+    - Kingfisher
+  trunk:
+    - MSCircularProgressView
+    - SFHFKeychainUtils
+
+EXTERNAL SOURCES:
+  FFSpinSDK:
+    :podspec: http://202.53.86.13:8088/FFspin/FFSpinSDK-2.4.3.podspec
 
 SPEC CHECKSUMS:
-  FFSpin: 549422a6dd7b2e81019c3a48986d8c66d3fbb42a
-  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  FFSpinSDK: 362f9a3b2060ec266182a80ba9dcd9c488525ab0
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  MSCircularProgressView: 93d111f213e89492443455c7efbfe2ca4cbaa1d0
+  SFHFKeychainUtils: a4e064aedb7a5ada3d5219152d45f53cebc16507
 
-PODFILE CHECKSUM: a3b06e53e7f9bc84246b1b1d9a0c3af97cb2f641
+PODFILE CHECKSUM: 18be5eb76dc46a81c13a28f7a581765c4a793a94
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.9.1

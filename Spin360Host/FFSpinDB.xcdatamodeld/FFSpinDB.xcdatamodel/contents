@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Spin360List" representedClassName="Spin360List" syncable="YES" codeGenerationType="class">
+        <attribute name="dateForSorting" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="processProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="processStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spinFK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spinGUID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spinName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spinType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploadProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uploadStatus" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Spin360List" positionX="-45" positionY="0" width="128" height="195"/>
+    </elements>
+</model>
